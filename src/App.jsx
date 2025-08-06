@@ -5,12 +5,10 @@ import './App.css'
 import { Button } from './components/Button'
 
 function App() {
-  const [alerting, setAlerting] = useState(true)
+  const [count, setCount] = useState(0)
 
-  function handleCick(buttonName) {
-    if (alerting) {
-      alert(`${buttonName} clicked`)
-    }
+  function handleCick() {
+   setCount(prevCount => prevCount + 1)
   }
 
   return (
@@ -35,11 +33,11 @@ function App() {
         </ul>
       </div>
 
-    
+       <p>The button has been clicked: {count} times</p>
 
-      <Button onClick={() => handleCick("Button1")}>Button1</Button>
-      <Button onClick={() => handleCick("Button2")}>Button2</Button>
-      <Button onClick={() => handleCick("Button3")}>Button3</Button>
+      <Button onClick={handleCick}>click Me</Button>
+      {/* <Button onClick={() => handleCick("Button2")}>Button2</Button>
+      <Button onClick={() => handleCick("Button3")}>Button3</Button> */}
     </>
   )
 }
