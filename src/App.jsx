@@ -2,14 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Button } from './components/Button'
 
 function App() {
-  const [alerting, setAlerting] = useState(false)
+  const [alerting, setAlerting] = useState(true)
 
-  function handleCick() {
-    setAlerting(prev => !prev)
+  function handleCick(buttonName) {
     if (alerting) {
-      alert("Clicked!")
+      alert(`${buttonName} clicked`)
     }
   }
 
@@ -35,7 +35,11 @@ function App() {
         </ul>
       </div>
 
-      <button onClick={handleCick}>Click Me</button>
+    
+
+      <Button onClick={() => handleCick("Button1")}>Button1</Button>
+      <Button onClick={() => handleCick("Button2")}>Button2</Button>
+      <Button onClick={() => handleCick("Button3")}>Button3</Button>
     </>
   )
 }
