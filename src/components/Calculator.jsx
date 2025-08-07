@@ -10,37 +10,37 @@ export default function() {
         <>
           <h1>{clickedText}</h1>
           <div className="flex items-center justify-center gap-2">
-            <button className="w-20">AC</button>
-            <button className="w-20">+/-</button>
-            <button className="w-20">%</button>
-            <button className="w-20">÷</button>
+            <button className="w-14 h-14 rounded-full bg-black">AC</button>
+            <button className="w-14 h-14 rounded-full bg-black">+/-</button>
+            <button className="w-14 h-14 rounded-full bg-black">%</button>
+            <button className="w-14 h-14 rounded-full bg-amber-500">÷</button>
           </div>
          
          <div className="pt-2 flex items-center justify-center gap-2">
-            <button className="w-20">7</button>
-            <button className="w-20">8</button>
-            <button className="w-20">9</button>
-            <button className="w-20">X</button>
+            <button className="w-14 h-14 rounded-full bg-black">7</button>
+            <button className="w-14 h-14 rounded-full bg-black">8</button>
+            <button className="w-14 h-14 rounded-full bg-black">9</button>
+            <button className="w-14 h-14 rounded-full bg-amber-500">x</button>
           </div>
 
          <div className="pt-2 flex items-center justify-center gap-2">
-            <button className="w-20">4</button>
-            <button className="w-20">5</button>
-            <button className="w-20">6</button>
-            <button className="w-20">-</button>
+            <button className="w-14 h-14 rounded-full bg-black">4</button>
+            <button className="w-14 h-14 rounded-full bg-black">5</button>
+            <button className="w-14 h-14 rounded-full bg-black">6</button>
+            <button className="w-14 h-14 rounded-full bg-amber-500">-</button>
           </div>
 
          <div className="pt-2 flex items-center justify-center gap-2">
-            <button className="w-20">1</button>
-            <button className="w-20">2</button>
-            <button className="w-20">3</button>
-            <button className="w-20">+</button>
+            <button className="w-14 h-14 rounded-full bg-black">1</button>
+            <button className="w-14 h-14 rounded-full bg-black">2</button>
+            <button className="w-14 h-14 rounded-full bg-black">3</button>
+            <button className="w-14 h-14 rounded-full bg-amber-500">+</button>
           </div>
 
          <div className="pt-2 flex items-center justify-center gap-2">
-            <button className="w-[167px]">0</button>
-            <button className="w-20">.</button>
-            <button className="w-20">=</button>
+            <button className="w-[120px] h-14 bg-black rounded-full">0</button>
+            <button className="w-14 h-14 rounded-full bg-black">.</button>
+            <button className="w-14 h-14 rounded-full bg-amber-500">=</button>
           </div>
 
 
