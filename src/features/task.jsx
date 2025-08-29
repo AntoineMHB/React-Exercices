@@ -9,11 +9,14 @@ export const taskSlice = createSlice({
   },
   reducers: {
     addTask: (state, action) => {
-      state.value.push(action.payload);
+      state.value.push({
+        id: Date.now(),
+        name: action.payload.name,
+      });
     },
 
     removeTask: (state, action) => {
-      state.value = initialState;
+      state.value = state.value.filter((task) => task.id !== action.payload);
     },
   },
 });

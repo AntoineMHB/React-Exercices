@@ -14,6 +14,7 @@ export default function InputTask() {
           <input
             className="text-start pl-2"
             type="text"
+            id="taskInput"
             placeholder="Enter a task"
             onChange={(event) => {
               setMyTask(event.target.value);
@@ -21,7 +22,10 @@ export default function InputTask() {
           />
         </div>
         <button
-          onClick={() => dispatch(addTask({ name: myTask }))}
+          onClick={() => {
+            dispatch(addTask({ name: myTask }));
+            document.getElementById("taskInput").value = "";
+          }}
           className="bg-amber-200 w-[80px]"
         >
           Add
