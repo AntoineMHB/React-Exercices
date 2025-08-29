@@ -6,11 +6,13 @@ import { configureStore } from "@reduxjs/toolkit";
 import userReducer from "./features/user.jsx";
 import { Provider } from "react-redux";
 import themeReducer from "./features/theme.jsx";
+import taskReducer from "./features/task.jsx";
 
 const store = configureStore({
   reducer: {
     user: userReducer,
     theme: themeReducer,
+    task: taskReducer,
   },
 });
 
