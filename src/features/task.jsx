@@ -1,15 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = { name: "No task entered" };
+// const initialState = { name: "No task entered" };
 
 export const taskSlice = createSlice({
   name: "task",
   initialState: {
-    value: initialState,
+    value: [],
   },
   reducers: {
     addTask: (state, action) => {
-      state.value = action.payload;
+      state.value.push(action.payload);
     },
 
     removeTask: (state, action) => {
