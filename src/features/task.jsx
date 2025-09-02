@@ -18,9 +18,15 @@ export const taskSlice = createSlice({
     removeTask: (state, action) => {
       state.value = state.value.filter((task) => task.id !== action.payload);
     },
+
+    crossTask: (state, action) => {
+      state.value = state.value.filter(
+        (task) => task.id === action.payload
+      ).style.textDecoration = "line-through";
+    },
   },
 });
 
-export const { addTask, removeTask } = taskSlice.actions;
+export const { addTask, removeTask, crossTask } = taskSlice.actions;
 
 export default taskSlice.reducer;

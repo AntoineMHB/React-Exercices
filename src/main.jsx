@@ -8,18 +8,24 @@ import { Provider } from "react-redux";
 import themeReducer from "./features/theme.jsx";
 import taskReducer from "./features/task.jsx";
 
-const store = configureStore({
-  reducer: {
-    user: userReducer,
-    theme: themeReducer,
-    task: taskReducer,
-  },
-});
+// const store = configureStore({
+//   reducer: {
+//     user: userReducer,
+//     theme: themeReducer,
+//     task: taskReducer,
+//   },
+// });
+
+// createRoot(document.getElementById("root")).render(
+//   <StrictMode>
+//     <Provider store={store}>
+//       <App />
+//     </Provider>
+//   </StrictMode>
+// );
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <App />
   </StrictMode>
 );

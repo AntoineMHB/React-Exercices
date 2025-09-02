@@ -4,6 +4,7 @@ import Login from "./components/Login";
 import ChangeColor from "./components/ChangeColor";
 import InputTask from "./components/InputTask";
 import { Task } from "./components/Task";
+import Fetcher from "./components/Fetcher";
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       {/* <Profile />
       <Login />
       <ChangeColor /> */}
-      <InputTask />
-      <Task />
+      {/* <InputTask />
+      <Task /> */}
+      <Fetcher />
     </>
   );
 }
